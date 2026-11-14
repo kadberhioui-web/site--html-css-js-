@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بحث عن HTML</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-html">
+<nav class="tabs" aria-label="التنقل">
+  <a class="t-intro" href="index.html">المقدمة العامة</a>
+  <a class="t-html" href="html.html" aria-current="page">HTML</a>
+  <a class="t-css" href="css.html">CSS</a>
+  <a class="t-js" href="javascript.html">JavaScript</a>
+  <a class="t-end" href="conclusion.html">الخاتمة العامة</a>
+</nav>
+<div class="bg" style="--bg:url(images/html-hero.jpg)"></div>
+<main>
+  <h1 class="title"><img src="images/html-logo.png" alt="" onerror="this.style.display='none'"><span>HTML: هيكل صفحات الويب</span></h1>
+  <div class="tools"><button id="toggle-all" type="button">فتح الكل</button></div>
+
+  <details><summary>المقدمة</summary><div>
+    <p>كل صفحة ويب تراها في المتصفح تبدأ من ملف HTML. هي أول لغة يتعلمها من يريد بناء المواقع، وهي الأساس الذي تُبنى عليه اللغتان الأخريان.</p>
+  </div></details>
+
+  <details><summary>التعريف</summary><div>
+    <p>HTML اختصار لـ HyperText Markup Language، أي لغة ترميز النص التشعبي. هي لغة ترميز وليست لغة برمجة: لا تحتوي على شروط أو حلقات، وإنما تصف بنية المحتوى بوسوم (tags) يفهمها المتصفح ويعرضها على الشاشة.</p>
+  </div></details>
+
+  <details><summary>النشأة والتطور</summary><div>
+    <p>ابتكر العالم تيم برنرز-لي اللغة في مركز CERN حوالي عام 1991 ليتبادل الباحثون الوثائق عبر الروابط. تطورت بعد ذلك عبر HTML 4 وXHTML حتى صدر HTML5 توصيةً رسمية عام 2014، وأضاف وسومًا دلالية ودعمًا مباشرًا للصوت والفيديو والرسم. ويتولى تطويرها اليوم WHATWG كمعيار حي يتجدد.</p>
+  </div></details>
+
+  <details><summary>بنية الصفحة</summary><div>
+    <p>تتكون كل صفحة من جزأين: <code>head</code> للمعلومات غير المرئية كالعنوان والترميز، و<code>body</code> للمحتوى الظاهر.</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="ar" dir="rtl"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;صفحتي الأولى&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;مرحبا&lt;/h1&gt;
+  &lt;p&gt;هذه فقرة.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+  </div></details>
+
+  <details><summary>أهم الوسوم</summary><div>
+    <p>العناوين <code>h1</code> إلى <code>h6</code>، والفقرة <code>p</code>، والرابط <code>a</code>، والصورة <code>img</code>، والقوائم <code>ul</code> و<code>ol</code>، والجداول <code>table</code>، والنماذج <code>form</code> و<code>input</code>. وهناك وسوم دلالية تصف دور الجزء في الصفحة مثل <code>header</code> و<code>nav</code> و<code>main</code> و<code>section</code> و<code>footer</code>.</p>
+  </div></details>
+
+  <details><summary>المميزات</summary><div>
+    <p>سهلة التعلم، ومدعومة في كل المتصفحات، ومجانية ومفتوحة. والوسوم الدلالية تفيد محركات البحث وقارئات الشاشة لذوي الإعاقة البصرية.</p>
+  </div></details>
+
+  <details><summary>الحدود</summary><div>
+    <p>لا تتحكم HTML وحدها في الشكل ولا في التفاعل، فصفحتها بلا CSS تظهر بسيطة، وبلا JavaScript تبقى ساكنة. لذلك تُستعمل مع اللغتين الأخريين.</p>
+  </div></details>
+
+  <details><summary>الخاتمة</summary><div>
+    <p>HTML هي الهيكل الذي لا يقوم موقع بدونه. وإتقان وسومها الأساسية والدلالية هو الخطوة الأولى الصحيحة قبل الانتقال إلى التنسيق مع CSS.</p>
+  </div></details>
+</main>
+<footer>تابع القراءة: <a href="css.html">بحث CSS</a></footer>
+<script src="script.js"></script>
+</body>
+</html>

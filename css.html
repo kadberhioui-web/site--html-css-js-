@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بحث عن CSS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-css">
+<nav class="tabs" aria-label="التنقل">
+  <a class="t-intro" href="index.html">المقدمة العامة</a>
+  <a class="t-html" href="html.html">HTML</a>
+  <a class="t-css" href="css.html" aria-current="page">CSS</a>
+  <a class="t-js" href="javascript.html">JavaScript</a>
+  <a class="t-end" href="conclusion.html">الخاتمة العامة</a>
+</nav>
+<div class="bg" style="--bg:url(images/css-hero.jpg)"></div>
+<main>
+  <h1 class="title"><img src="images/css-logo.png" alt="" onerror="this.style.display='none'"><span>CSS: شكل صفحات الويب</span></h1>
+  <div class="tools"><button id="toggle-all" type="button">فتح الكل</button></div>
+
+  <details><summary>المقدمة</summary><div>
+    <p>صفحة HTML دون تنسيق تبدو نصًّا أسود على خلفية بيضاء. وCSS هي اللغة التي تحوّلها إلى تصميم له ألوان وخطوط وتخطيط مرتب.</p>
+  </div></details>
+
+  <details><summary>التعريف</summary><div>
+    <p>CSS اختصار لـ Cascading Style Sheets أي صفحات الأنماط المتتالية. هي لغة أنماط تصف مظهر عناصر HTML: ألوانها وأحجامها ومواقعها وطريقة عرضها على مختلف الشاشات.</p>
+  </div></details>
+
+  <details><summary>النشأة والتطور</summary><div>
+    <p>اقترح هوكون فيوم لي فكرتها عام 1994 لفصل الشكل عن المحتوى. صدرت CSS1 توصيةً رسمية في ديسمبر 1996، ثم CSS2 عام 1998، أما CSS3 فتطورت على شكل وحدات مستقلة تضيف كل واحدة منها ميزات جديدة كالتحويلات والحركة والتخطيط المرن.</p>
+  </div></details>
+
+  <details><summary>طرق إضافة CSS</summary><div>
+    <p>ثلاث طرق: داخل الوسم نفسه بالخاصية <code>style</code> (أقلها تنظيمًا)، أو داخل وسم <code>style</code> في رأس الصفحة، أو في ملف خارجي بامتداد <code>.css</code> يُربط عبر وسم <code>link</code>. الطريقة الثالثة هي الأفضل لأنها تجمع تنسيق الموقع كله في مكان واحد.</p>
+  </div></details>
+
+  <details><summary>القواعد والمحددات</summary><div>
+    <p>تتكون القاعدة من محدد يختار العناصر وكتلة تضم الخصائص وقيمها. يمكن اختيار العنصر باسم وسمه، أو بصنف <code>.class</code>، أو بمعرّف <code>#id</code>.</p>
+<pre>h1 { color: #2965f1; font-size: 2rem; }
+.card { padding: 1rem; border-radius: 8px; }
+@media (min-width: 800px) {
+  .card { width: 50%; }
+}</pre>
+  </div></details>
+
+  <details><summary>أهم المفاهيم</summary><div>
+    <p><strong>نموذج الصندوق:</strong> لكل عنصر محتوى وحشوة (padding) وإطار (border) وهامش (margin). <strong>التتالي والأولوية:</strong> عند تعارض القواعد يُحسم الأمر بالتحديد ثم بترتيب الكتابة. <strong>Flexbox وGrid:</strong> نظامان لتخطيط الصفحة في صفوف وأعمدة. <strong>الاستعلامات الوسائطية (media queries):</strong> تغيّر التنسيق حسب عرض الشاشة لتكون الصفحة متجاوبة.</p>
+  </div></details>
+
+  <details><summary>المميزات والحدود</summary><div>
+    <p>تفصل الشكل عن المحتوى فيسهل تغيير تصميم موقع كامل بتعديل ملف واحد، وتوفر تجاوبًا مع الهواتف دون لغة إضافية. في المقابل، تتعقد الملفات الكبيرة إن لم تُنظم، وقد يظهر التنسيق بشكل مختلف قليلًا بين المتصفحات.</p>
+  </div></details>
+
+  <details><summary>الخاتمة</summary><div>
+    <p>CSS هي لغة الجمال في الويب. من يفهم نموذج الصندوق والتخطيط المرن والاستعلامات الوسائطية يستطيع أن يصمم صفحات مرتبة تعمل على كل الأجهزة.</p>
+  </div></details>
+</main>
+<footer>تابع القراءة: <a href="javascript.html">بحث JavaScript</a></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML وCSS وJavaScript: ثلاث لغات تبني الويب</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="hero">
+  <div class="top">
+    <img src="images/header.jpg" alt="اسم المعهد وشعارات HTML وCSS وJavaScript، بحث شامل، إشراف الأستاذة" onerror="this.style.display='none'">
+  </div>
+
+  <div class="stage">
+    <nav class="pages" aria-label="البحوث">
+      <a id="p-html" href="html.html" aria-label="بحث HTML"><img src="images/html-logo.png" alt="HTML" onerror="this.style.display='none'"></a>
+      <a id="p-css" href="css.html" aria-label="بحث CSS"><img src="images/css-logo.png" alt="CSS" onerror="this.style.display='none'"></a>
+      <a id="p-js" href="javascript.html" aria-label="بحث JavaScript"><img src="images/js-logo.png" alt="JavaScript" onerror="this.style.display='none'"></a>
+    </nav>
+
+    <section class="intro">
+      <h2>المقدمة</h2>
+      <p>ثلاث لغات تبني كل صفحة ويب: HTML ترسم هيكلها، وCSS تمنحها شكلها وألوانها، وJavaScript تضيف إليها الحركة.</p>
+    </section>
+
+    <button id="concl-btn" class="cbtn" type="button" aria-expanded="false" aria-controls="concl-panel">الخاتمة ✔</button>
+
+    <section id="concl-panel" class="cpanel" hidden>
+      <button id="concl-close" class="cclose" type="button" aria-label="إغلاق">×</button>
+      <h3>الخاتمة العامة</h3>
+      <ul>
+        <li><img src="images/html-logo.png" alt="" onerror="this.style.display='none'"><span>HTML ترسم هيكل الصفحة وتنظم محتواها.</span></li>
+        <li><img src="images/css-logo.png" alt="" onerror="this.style.display='none'"><span>CSS تنسق شكلها وتناسب بها كل الشاشات.</span></li>
+        <li><img src="images/js-logo.png" alt="" onerror="this.style.display='none'"><span>JavaScript تضيف التفاعل وتغيّر المحتوى.</span></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بحث عن JavaScript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-js">
+<nav class="tabs" aria-label="التنقل">
+  <a class="t-intro" href="index.html">المقدمة العامة</a>
+  <a class="t-html" href="html.html">HTML</a>
+  <a class="t-css" href="css.html">CSS</a>
+  <a class="t-js" href="javascript.html" aria-current="page">JavaScript</a>
+  <a class="t-end" href="conclusion.html">الخاتمة العامة</a>
+</nav>
+<div class="bg" style="--bg:url(images/js-hero.jpg)"></div>
+<main>
+  <h1 class="title"><img src="images/js-logo.png" alt="" onerror="this.style.display='none'"><span>JavaScript: حركة صفحات الويب</span></h1>
+  <div class="tools"><button id="toggle-all" type="button">فتح الكل</button></div>
+
+  <details><summary>المقدمة</summary><div>
+    <p>عندما تنقر زرًّا فتظهر قائمة، أو تكتب في خانة فتظهر اقتراحات، فهذه JavaScript تعمل. هي اللغة التي تجعل الصفحة تتفاعل مع المستخدم بدل أن تبقى ساكنة.</p>
+  </div></details>
+
+  <details><summary>التعريف</summary><div>
+    <p>JavaScript لغة برمجة عالية المستوى تُنفَّذ مباشرة في المتصفح دون تثبيت شيء. وصارت تعمل أيضًا على الخوادم بفضل Node.js. وهي لا علاقة لها بلغة Java رغم تشابه الاسم.</p>
+  </div></details>
+
+  <details><summary>النشأة والتطور</summary><div>
+    <p>كتبها برندن آيك في شركة Netscape عام 1995 في وقت قصير، وسُميت أولًا Mocha ثم LiveScript ثم JavaScript. وُحِّدت لاحقًا باسم ECMAScript عام 1997، وجاء إصدار ES6 عام 2015 بتحديثات كبيرة مثل <code>let</code> و<code>const</code> ودوال السهم. وظهرت Node.js عام 2009 فنقلتها إلى الخادم.</p>
+  </div></details>
+
+  <details><summary>الأساسيات</summary><div>
+    <p>المتغيرات تُعلن بـ <code>let</code> و<code>const</code>. من الأنواع: النصوص والأعداد والقيم المنطقية والمصفوفات والكائنات. وتتحكم بالتنفيذ الشروط <code>if</code> والحلقات <code>for</code> و<code>while</code>، وتُجمع الأوامر المتكررة في دوال.</p>
+  </div></details>
+
+  <details><summary>DOM والأحداث</summary><div>
+    <p>يحوّل المتصفح صفحة HTML إلى شجرة كائنات تسمى DOM، وتستطيع JavaScript قراءتها وتعديلها. أما الأحداث فهي ما يفعله المستخدم، كالنقر والكتابة والتمرير، وتنتظرها اللغة لتنفذ ردّة فعل.</p>
+<pre>const btn = document.querySelector("button");
+btn.addEventListener("click", () => {
+  alert("تم النقر!");
+});</pre>
+  </div></details>
+
+  <details><summary>المميزات</summary><div>
+    <p>تجعل الصفحات تفاعلية، وتعمل في كل المتصفحات دون تثبيت، ولها نظام ضخم من المكتبات والأطر مثل React وVue. ويمكن بها بناء الواجهة والخادم بلغة واحدة.</p>
+  </div></details>
+
+  <details><summary>الحدود</summary><div>
+    <p>لا يصح الوثوق بما يدخله المستخدم دون تحقق منه لأسباب أمنية. وتصعب صيانة الشيفرة الكبيرة إن لم تُنظم، وتختلف سرعة التنفيذ بين الأجهزة.</p>
+  </div></details>
+
+  <details><summary>الخاتمة</summary><div>
+    <p>JavaScript هي لغة الحياة في الويب. بعد أن تتقن HTML وCSS تأتي هي لتضيف المنطق والتفاعل، وتفتح الباب لتطبيقات الويب كاملة.</p>
+  </div></details>
+</main>
+<footer>تابع القراءة: <a href="conclusion.html">الخاتمة العامة</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
